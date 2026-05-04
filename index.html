@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas Premium</title>
+    <meta name="description" content="Una aplicación de lista de tareas moderna y elegante para organizar tu día.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Mis Tareas</h1>
+            <p id="date-display"></p>
+        </header>
+
+        <div class="input-section">
+            <input type="text" id="todo-input" placeholder="¿Qué tienes planeado para hoy?" autocomplete="off">
+            <button id="add-btn">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+
+        <div class="filter-section">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="pending">Pending</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <ul id="todo-list">
+            <!-- Las tareas se cargarán aquí dinámicamente -->
+        </ul>
+
+        <div class="stats">
+            <span id="pending-count">0 tareas pendientes</span>
+            <button id="clear-all">Limpiar Todo</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
